@@ -1,4 +1,4 @@
-/*alert("hellos");*/
+alert("hellos");
 var startingPoint = 1;
 
 showSlides(startingPoint);
