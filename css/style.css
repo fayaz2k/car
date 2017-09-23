@@ -1,0 +1,203 @@
+body{
+    background-color: lightgray;
+    background: url(../images/bg.jpg) no-repeat top center black fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*.container-fluid{
+     border: 1px solid red; 
+}*/
+
+.container{
+    /*border: 1px solid red;*/
+    background: url(../images/bg.png);
+    padding: 0; /*if you dont add it you wont able to remove padding frm both side*/
+    width: 100%;
+    max-width: 1100px; 
+    /*if this will not assing the body will be scratch frm both side will like no width*/
+}
+
+.nav{
+    /*border: 1px solid red;*/
+    background: url(../images/nav.png) ;
+    
+}
+
+.nav>ul{
+    list-style: none;
+   /*  margin: 0;
+    padding: 0;*/
+}
+.nav>ul>li{
+    /*border: 1px solid white;*/
+    float: left;
+}
+
+.nav>ul>li>a{
+    color: white;
+    display: inline-block;
+    padding: 11px 20px;
+}
+.nav>ul>li>a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 15px 0 15px 0;
+    transition:all 1s ease;
+}
+.slider-contain{
+    width: 100%;
+    
+    position: relative;
+    /*max-height: 352px;*/
+    /*height: 352px;*/
+}
+
+.mySlides{
+/*position: absolute;*/
+display: none;
+/*height: 352px;*/
+
+}
+
+.mySlides img{
+    width: 100%;
+    max-height: 351px;
+    /*height: auto;*/
+}
+
+.numbertext{
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 8px 12px;
+    border: 1px solid red;
+    /*font-size: 12px;*/
+}
+
+.Captiontext{
+    position: absolute;
+    /*border: 1px solid red;*/
+    text-align: center;
+    width: 100%;
+    bottom: 8px;
+    color: white;
+}
+
+.prev, .next{
+    font-size: 30px;
+    color: white;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  /*border: 1px solid red;*/
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+   /* border: 1px solid red;*/
+}
+
+.prev:hover, .next:hover{
+    background-color: orange;
+    text-decoration: none;
+}
+.spot{
+    /*border: 1px solid red;*/
+    padding-top: 8px;
+}
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: orange;
+  transition:all 1s ease;
+}
+.newCars *{
+    /*margin: 6px 0;*/
+    text-align: center;
+    
+}
+
+.car{
+    border: 1px solid white;
+    margin: 16px 0;
+     
+}
+.car:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    opacity: 0.5;
+    color: blue;
+}
+.car img{
+    width: 100%;
+}
+
+.brands{
+    border-bottom:1px solid white; 
+    padding: 16px 0;
+}
+
+.footer{
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    
+}
+
+.nav2{
+    display: none;
+}
+.nav2 select{
+width:100%;
+padding:10px;
+border:#333 1px solid;
+outline:none;
+font-weight:800;
+color:#069;	
+	}
+
+@media screen and (max-width:768px){
+    .nav{
+        display: none;
+    }
+
+    .nav2{
+        display: block;
+        width: 100%;
+    }
+
+    .header{
+text-align:center;	
+	}
+}
+

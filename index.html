@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Car 2</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/w3.css"/>
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            
+            <div class="header">
+                <img src="./images/logo.png" alt="logo" id="logo">
+            </div> <!--header close-->
+
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div> <!--nav close-->
+
+            <nav class="nav2">
+                <select onChange="window.location.href=this.value">
+                    <option>Menu</option>
+                    <option value="index.html">Home</option>
+                    <option value="#">About</option>
+                    <option value="#">Services</option>
+                    <option value="#">Career</option>
+                    <option value="#">Contacts</option>
+                </select>
+            </nav>
+
+            <div class="slider-contain">
+                <div class="mySlides w3-animate-right ">
+                    <div class="numbertext">1/4</div> <!--numbertext close-->
+                        <img src="images/c5.jpg" alt="img1">
+                    <div class="Captiontext">Caption One</div>
+                </div> <!--mySlides close-->
+
+                <div class="mySlides w3-animate-left ">
+                    <div class="numbertext">2/4</div> <!--numbertext close-->
+                        <img src="images/c2.jpg" alt="img1">
+                    <div class="Captiontext">Caption two</div>
+                </div> <!--mySlides close-->
+
+                <div class="mySlides w3-animate-right ">
+                    <div class="numbertext">3/4</div> <!--numbertext close-->
+                        <img src="images/c3.jpg" alt="img1">
+                    <div class="Captiontext">Caption thr33</div>
+                </div> <!--mySlides close-->
+
+                <div class="mySlides w3-animate-left ">
+                    <div class="numbertext">4/4</div> <!--numbertext close-->
+                        <img src="images/c4.jpg" alt="img1">
+                    <div class="Captiontext">Caption four</div>
+                </div> <!--mySlides close-->
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div> <!--slider container closed-->
+
+            <div  style="text-align:center" class="spot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div> <!--dot close-->
+
+            <div class="newCars col-md-12">
+                <h2>New Cars</h2>
+                
+                <div class="car car1 col-md-4">
+                    <img src="images/01.png"/>
+                    <h3>Ferrari</h3>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div> <!--car 1 close-->
+
+                <div class="car car1 col-md-4">
+                    <img src="images/02.png"/>
+                    <h3>Ferrari</h3>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div> <!--car 2 close-->
+
+                <div class="car car1 col-md-4">
+                    <img src="images/03.png"/>
+                    <h3>Ferrari</h3>
+                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div> <!--car 3 close-->
+
+                <div class="brands">
+                    <h2>Our Brands</h2>
+                    <img src="images/brand2.png" alt=""/>
+                    <img src="images/brand3.png" alt=""/>
+                    <img src="images/brand4.png" alt=""/>
+                    <img src="images/brand5.png" alt=""/>
+                </div> <!--brands close-->
+
+            </div> <!--newCars close-->
+
+            <div class="footer text-right" >
+                <p>&copy; Copyright &amp; Privacy Policy Design By Fayaz Ali.</p>
+            </div> <!--footer close-->  
+           
+        </div> <!--container close-->
+    </div> <!--container-fluid closed-->
+    <script src="js/app.js"></script>
+</body>
+</html>
